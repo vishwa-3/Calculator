@@ -1,0 +1,10 @@
+HTML:
+    1. Container -> display and key-container
+    2. display -> input readonly
+    3. key-container -> buttons onclick [append(''),clr(),cal()]
+
+JS:
+    1. Use getElementById() to select 'display' id
+    2. append(input) -> add 'display' value with input
+    3. clr() -> empty the 'display' value
+    4. cal() -> calculate 'display' value with eval() method, catch the error and 'display' value to 'Error'

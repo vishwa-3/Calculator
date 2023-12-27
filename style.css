@@ -1,0 +1,88 @@
+html{
+    height: 100vh;
+}
+*{
+    font-family: 'Poiret One', sans-serif;
+
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom,rgb(255, 255, 255),rgb(255, 94, 196));
+    box-shadow: inset 0 0 100px rgb(255, 108, 194);
+    
+}
+
+
+.container{
+    height: 420px;
+    width: 280px;
+    background: linear-gradient(to right bottom,rgb(49, 49, 49),rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px black,0 5px 40px rgb(0, 0, 0);
+}
+
+
+#display {
+    height: 100px;
+    width: 240px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(255, 185, 229);
+    text-shadow: 0 0 5px rgb(0, 0, 0),0 0 10px rgb(0, 0, 0),0 0 15px rgb(0, 0, 0);
+    font-weight: bolder;
+
+}
+
+
+.key-container{
+    height: 240px;
+    width: 240px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    'clr clr mod add'
+    'n7 n8 n9 sub'
+    'n4 n5 n6 mul'
+    'n1 n2 n3 div'
+    'n0 n0 dot cal'
+    ;
+    gap : 10px;
+}
+
+
+.clear{
+    grid-area: clr;
+}
+.n0{
+    grid-area: n0;
+}
+
+
+button{
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right bottom,rgb(255, 183, 255),rgb(255, 122, 206));
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.889),0 0px 10px rgba(0, 0, 0, 0.847);
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+    opacity: .9;
+}
+button:active{
+    transform: scale(.95);
+}
+
